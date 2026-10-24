@@ -359,12 +359,12 @@ footer{
 /* Smooth scrolling + offset for fixed nav */
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 50px; /* adjust if your nav is taller/shorter */
+    scroll-padding-top: 15px; /* adjust if your nav is taller/shorter */
 }
 
 /* Also ensure the target section accounts for the fixed nav */
 #HomePage{
-    scroll-margin-top: 50px; /* same number as above */
+    scroll-margin-top: 15px; /* same number as above */
 }
 
 /* Scroll hint button */

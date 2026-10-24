@@ -32,176 +32,207 @@
             </div>
         </header>
 
-        <!-- Create the buttons that will be used to sort my content -->
-        <!-- apply data categories so that js can sort through them -->
-        <div id="Filter">
-            <button class="FilterBtn" type="button" data-category="All">All</button>
-            <button class="FilterBtn" type="button" data-category="Comp">Compositing</button>
-            <button class="FilterBtn" type="button" data-category="Editing">Editing</button>
-            <button class="FilterBtn" type="button" data-category="Sound">Sound Design</button>
-            <button class="FilterBtn" type="button" data-category="MotionGraphics">Motion Graphics</button>
-            <button class="FilterBtn" type="button" data-category="Photoshop">Photoshop</button>
-        </div>
+    <main id="Gallery">
+        <section class="GallerySection" aria-labelledby="EditingHeading">
+            <h2 id="EditingHeading" class="GalleryHeading">Editing</h2>
+            <div class="GalleryGrid">
 
-    <main>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/cnc-connect.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1Giy__Wziur1uoJSHBMkQFhVKb1RwkoaU/preview" aria-label="Watch CNC Connect video">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">CNC CONNECT</p>
+                    <p class="GalDescription">Managed the complete end-to-end post-production pipeline for the 13-part University of Advancing Technology "CONNECT" series, transforming raw footage into polished final cuts. Created the intro, oversaw narrative pacing for the CNC machinery spotlight, and executed all final audio corrections and leveling and color grading.</p>
+                </div>
 
-        <!-- Create the section which will hold all my gallery Content -->
-        <!-- To add more content copy and paste a div tag and update the src="" and the <p> tag -->
-        <section id="Gallery">
-            <div class="GalItem" data-category="MotionGraphics">
-            <iframe 
-                src="https://drive.google.com/file/d/1mVe5QBsSkQ7vQ7OQO4C7V9WLpdNsCgSL/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Title Sequence</p>
-            <p class="GalDescription">Animated a stylized title sequence in After Effects as a motion design exercise, focusing on timing and visual rhythm.</p>
-        </div>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/admissons-connect.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1wC8emO3yFdx-BM0LZ5I723i9ZGRZOafF/preview" aria-label="Watch Admissons Connect video">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Admissons CONNECT</p>
+                    <p class="GalDescription">Handled the full edit for this episode of the CONNECT series. The footage originally had two people on camera, but due to a last-minute casting change, I created a clean plate background and an animated mask to completely remove the second person from the chair while keeping narrative there, the audio clean, and matching the rest of the series.</p>
+                </div>
 
-        <div class="GalItem" data-category="Comp">
-            <iframe 
-                src="https://drive.google.com/file/d/1U1hz-2-u5jmKsoBw7sixmJysXEmv_On2/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Ship Over Earth</p>
-            <p class="GalDescription">Digital assets composited into one scene using Nuke.</p>
-        </div>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/connect-montage.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1EycaoR_RtHCEGUCA9pJ6jW84WLwwvaPq/preview" aria-label="Watch CONNECT Montage video">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">CONNECT Montage</p>
+                    <p class="GalDescription">Created the final montage video covering the live student events and campus activities for the CONNECT campaign. Focused on a fast-paced edit that captured the energy and fun of the event while highlighting the student projects and award winners.</p>
+                </div>
 
-        <div class="GalItem" data-category="Comp">
-            <iframe 
-                src="https://drive.google.com/file/d/1YhQxdhAEMTOzkxsJZH3uZD9CfUNVS1Ge/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Screen Replacement</p>
-            <p class="GalDescription">TV screen composited into the footage using Nuke.</p>
-        </div>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/graduates-interviews.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1bt4kIQ7tDEiuqDw-4HqHRZcEdqoJD8qq/preview" aria-label="Watch Graduate Interviews video">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Graduates Interviews</p>
+                    <p class="GalDescription">This was work done as an Intern Editor at the University of Advancing Technology. I combined and edited four separate graduate interviews into a single, cohesive two-minute promotional video. I Sifted through footage to find overlapping themes, creating a tight, fast-moving narrative that highlights the student experience.</p>
+                </div>
 
-        <div class="GalItem" data-category="Editing">
-            <iframe 
-                src="https://drive.google.com/file/d/1vS73P2G8bs3fAXTxWjJDq-RnF2PHqBvE/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Conceptual Shooting</p>
-            <p class="GalDescription">Filmed and edited a one-minute conceptual visual study, using composition, lighting, and pacing to convey theme without audio.</p>
-        </div>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/conceptual-shooting.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1vS73P2G8bs3fAXTxWjJDq-RnF2PHqBvE/preview" aria-label="Watch Conceptual Shooting">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Conceptual Shooting</p>
+                    <p class="GalDescription">Filmed and edited a one-minute conceptual visual study, using composition, lighting, and pacing to convey theme without audio. Focused on visual continuity and precise cut placement to drive the narrative purely through imagery.</p>
+                </div>
 
-        <div class="GalItem" data-category="Editing">
-            <iframe 
-                src="https://drive.google.com/file/d/1f_VK-lM_AQKVIA9YkBzVILY0TDQDPga_/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Anti-Littering PSA</p>
-            <p class="GalDescription">Filmed and edited a 30 second public service announcement addressing littering, focusing on visuals and impactful storytelling.</p>
-        </div>
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/anti-littering-psa.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1f_VK-lM_AQKVIA9YkBzVILY0TDQDPga_/preview" aria-label="Watch Anti-Littering PSA">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Anti-Littering PSA</p>
+                    <p class="GalDescription">Filmed and edited a 30-second public service announcement addressing littering, focusing on visuals and impactful storytelling. Designed the pacing and layout to meet strict broadcast specifications, resulting in the project being requested for a small sports television broadcast.</p>
+                </div>
 
-        <div class="GalItem" data-category="Sound">
-            <iframe 
-                src="https://drive.google.com/file/d/1BSNFD0qM9tLp_xgMVaKWCoEQpfpWrujl/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Alien SoundScape</p>
-            <p class="GalDescription">Recorded audio to mix into one aural environment.</p>
-        </div>
-
-        <div class="GalItem" data-category="Editing">
-            <iframe 
-                src="https://drive.google.com/file/d/1bYFoiUGtXJfr0V0JXGzRBxizxuqgeq64/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">The Spa Edit</p>
-            <p class="GalDescription">Edited the short film 'The Spa' using professional footage provided for educational use, assembling the project according to the script with a focus on narrative pacing, continuity, and performance-driven editing.</p>
-        </div>
-
-        <div class="GalItem" data-category="Sound">
-            <iframe
-                src="https://drive.google.com/file/d/1IBSoiGz7HNQp3FWn_cTVwJVReyjWnxwL/preview"
-                title="Ethereal Sound Scape"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Ethereal Sound Scape</p>
-            <p class="GalDescription">This is an ethereal soundscape I created for an unannounced game in development during Production Studio. The task was to create a calming but also slightly uneasy sound that would be played in a certain area of this game. I created and recorded all the sounds, then mixed them all together.</p>
-        </div>
-
-        <div class="GalItem" data-category="Sound">
-            <iframe
-                src="https://drive.google.com/file/d/1K_pvJKKInHRX0ULFfc1dTqNr7C2N-xus/preview"
-                title="Facility Sound Scape"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Facility Sound Scape</p>
-            <p class="GalDescription">This is a facility soundscape I created for an unannounced game in development during Production Studio. The task was to create an eerie aural environment with various sounds looped in to make it feel as if something is with you. I created and recorded all the sounds, then mixed them all together.</p>
-        </div>
-
-        <div class="GalItem" data-category="Sound">
-            <iframe
-                src="https://drive.google.com/file/d/1zcAKvAhDoM_NFl2YYB4zAxOxKkeLTwDJ/preview"
-                title="Audio Story"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Audio Story</p>
-            <p class="GalDescription">This was assignment 5.4 from Digital Fundamentals. The goal was to tell an immersive story using sound to make the listener feel in the story world. The sounds used in this one were downloaded from the internet, but I edited and mixed the sounds together to create an immersive experience for the listener.</p>
-        </div>
-
-        <div class="GalItem" data-category="Editing">
-            <iframe 
-                src="https://drive.google.com/file/d/1OYuVAw0wvo3Q2990ATzD0keu271JJbSG/preview"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-            <p class="GalTitle">Aliens Got Talent</p>
-            <p class="GalDescription">Worked with a team to create our submission for a film festival.</p>
-        </div>
-
-                <div class="GalItem" data-category="Photoshop">
-        <a href="Walker_FellowShipBluRayCover.png" class="LightboxLink">
-            <div class="GalMedia ExpandOnHover RevealFit" style="--img:url('Walker_FellowShipBluRayCover.png')">
-                <img src="Walker_FellowShipBluRayCover.png" alt="Lord of The Rings DVD Cover">
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/the-spa-edit.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1bYFoiUGtXJfr0V0JXGzRBxizxuqgeq64/preview" aria-label="Watch The Spa Edit">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">The Spa Edit</p>
+                    <p class="GalDescription">Edited the short film 'The Spa' using professional footage provided for educational use, assembling the project according to the script with a focus on narrative pacing, continuity, and performance-driven editing.</p>
+                </div>
             </div>
-        </a>
-        <p class="GalTitle">Lord of The Rings DVD Cover</p>
-        <p class="GalDescription">Designed a Lord of The Rings BluRay Cover. (Click to Expand)</p>
-        </div>
+        </section>
 
-        <div class="GalItem" data-category="Photoshop">
-            <a href="Walker_Flyer.png" class="LightboxLink">
-                <div class="GalMedia ExpandOnHover RevealFit" style="--img:url('Walker_Flyer.png')">
-                    <img src="Walker_Flyer.png" alt="Concert Flyer">
+        <section class="GallerySection" aria-labelledby="SoundHeading">
+            <h2 id="SoundHeading" class="GalleryHeading">Sound Design</h2>
+            <div class="GalleryGrid">
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/alien-soundscape.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1BSNFD0qM9tLp_xgMVaKWCoEQpfpWrujl/preview" aria-label="Watch Alien SoundScape">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Alien SoundScape</p>
+                    <p class="GalDescription">Captured and processed original field audio to construct an immersive, otherworldly sound environment from an alien planet. Focused on creative sound design, pitch manipulation, and track layering to establish a realistic sense of alien geography and unique acoustic depth.
+</p>
                 </div>
-            </a>
-            <p class="GalTitle">Concert Flyer</p>
-            <p class="GalDescription">Designed a concert flyer for a made up Stevie Wonder Concert. (Click to Expand)</p>
-        </div>
 
-        <div class="GalItem" data-category="Photoshop">
-            <a href="Walker_StillLife.png" class="LightboxLink">
-                <div class="GalMedia ExpandOnHover RevealFit" style="--img:url('Walker_StillLife.png')">
-                    <img src="Walker_StillLife.png" alt="Abstract Still Life">
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/ethereal-sound-scape.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1IBSoiGz7HNQp3FWn_cTVwJVReyjWnxwL/preview" aria-label="Watch Ethereal Sound Scape">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Ethereal Sound Scape</p>
+                    <p class="GalDescription">Created a calming yet slightly uneasy ambient soundscape designed for a specific area within an unannounced video game concept. Field-recorded and synthesized all raw audio assets from scratch, then mixed and layered the final tracks to establish a tense, atmospheric mood.</p>
                 </div>
-            </a>
-            <p class="GalTitle">Abstract Still Life</p>
-            <p class="GalDescription">Photographed and editied an abstract still life with a theme of time. (Click to Expand)</p>
-        </div>
 
-        <div class="GalItem" data-category="Photoshop">
-            <a href="WalkerAbstractSelfPortrait.png" class="LightboxLink">
-                <div class="GalMedia ExpandOnHover RevealFit" style="--img:url('WalkerAbstractSelfPortrait.png')">
-                    <img src="WalkerAbstractSelfPortrait.png" alt="Abstract Self Portrait">
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/facility-sound-scape.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1K_pvJKKInHRX0ULFfc1dTqNr7C2N-xus/preview" aria-label="Watch Facility Sound Scape">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Facility Sound Scape</p>
+                    <p class="GalDescription">Designed an eerie, tense environmental soundscape for a specialized facility level within an unannounced video game concept. Field-recorded and layered raw audio assets with looping psychological cues to create an immersive, unsettling atmosphere that builds a sense of tension for the player.</p>
                 </div>
-            </a>
-            <p class="GalTitle">Abstract Self Portrait</p>
-            <p class="GalDescription">Took a self portrait and turned it into an abstract visual. (Click to Expand)</p>
-        </div>
+
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/audio-story.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1zcAKvAhDoM_NFl2YYB4zAxOxKkeLTwDJ/preview" aria-label="Watch Audio Story">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Audio Story</p>
+                    <p class="GalDescription">Took pre-recorded audio from the internet and mixed it together to create a single aural environment to support the narrative and create an immersive experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="GallerySection" aria-labelledby="VfxHeading">
+            <h2 id="VfxHeading" class="GalleryHeading">VFX &amp; Motion Graphics</h2>
+            <div class="GalleryGrid">
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/title-sequence.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1mVe5QBsSkQ7vQ7OQO4C7V9WLpdNsCgSL/preview" aria-label="Watch Title Sequence">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Title Sequence</p>
+                    <p class="GalDescription">Animated a stylized title sequence in After Effects as a motion design exercise, focusing on timing and visual rhythm.</p>
+                </div>
+
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/ship-over-earth.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1U1hz-2-u5jmKsoBw7sixmJysXEmv_On2/preview" aria-label="Watch Ship Over Earth">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Ship Over Earth</p>
+                    <p class="GalDescription">Digital assets composited into one scene using Nuke.</p>
+                </div>
+
+                <div class="GalItem">
+                    <div class="VideoPreview">
+                        <img src="thumbnails/screen-replacement.jpg" alt="" loading="lazy" decoding="async" width="800" height="450">
+                        <button class="VideoOpen" type="button" data-video-src="https://drive.google.com/file/d/1YhQxdhAEMTOzkxsJZH3uZD9CfUNVS1Ge/preview" aria-label="Watch Screen Replacement">
+                            <span class="VideoPlayIcon" aria-hidden="true">&#9654;</span>
+                        </button>
+                    </div>
+                    <p class="GalTitle">Screen Replacement</p>
+                    <p class="GalDescription">TV screen composited into the footage using Nuke.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <dialog id="VideoViewer" aria-labelledby="VideoViewerTitle">
+        <div class="VideoViewerPanel">
+            <header class="VideoViewerHeader">
+                <h2 id="VideoViewerTitle">Video</h2>
+                <div class="VideoViewerControls">
+                    <button id="VideoFullscreen" class="VideoViewerControl" type="button" aria-label="Full screen" aria-pressed="false" title="Full screen" hidden>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3"></path>
+                        </svg>
+                    </button>
+                    <button id="VideoViewerClose" class="VideoViewerControl" type="button" aria-label="Close video" title="Close video" autofocus>
+                        <span aria-hidden="true">&#215;</span>
+                    </button>
+                </div>
+            </header>
+            <div class="VideoViewerMedia">
+                <div class="VideoPlayerFrame">
+                    <button id="VideoPopoutDisabled" class="VideoViewerControl VideoPopoutDisabled" type="button" aria-label="Video pop-out is disabled" title="Video pop-out is disabled">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M15 3h6v6m0-6L10 14m8-1v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
+                    </button>
+                    <iframe id="VideoPlayer" title="Video player" sandbox="allow-scripts allow-same-origin allow-presentation" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p id="VideoPopoutNotice" class="VideoPopoutNotice" role="status" aria-live="polite" aria-atomic="true"></p>
+            </div>
+        </div>
+    </dialog>
 
     <!-- Link the JavaScirpt File -->
     <script src="script.js"></script>
@@ -223,10 +254,6 @@
     </footer>
 </body>
 
-<div id="Lightbox">
-    <button id="LightboxClose">✕</button>
-    <img id="LightboxImg" alt="">
-</div>
 </html>
 
 
